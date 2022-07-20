@@ -1,109 +1,126 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Vanille de Madagascar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-
+<title>Vanille de Madagascar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 </head>
-
 <body>
-    <header role="header">
-        <nav class="menu" role="navigation">
-            <div class="m-left">
-                <img src="logo.png" alt="logo" height="105" width="95">
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">A propos</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Nos produits</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+  </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="bun2.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Vanille 100% naturelle </h3>
+      <p><b>Sans doute la meilleure qualité du monde</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="bun3.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Des prix imbattables</h3>
+      <p><b>5 tiges à 10£</b></p>   
+      <p><b>250g à 10£</b></p>
+      <p><b>1 kg à 385£</b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="bun4.png" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Expédition</h3>
+      <p><b>Livraison dans toute la France et outre mer avec Colissimo</b></p>    
+    </div>
+  </div>
+
+
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Toulouse,FR<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +33667080050<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: alyasgaradnane@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
             </div>
-            <div class="m-right">
-                <a href="#acceui" class="m-link"><i class="fas fa-home"></i> Acceuil</a>
-                <a href="#activité" class="m-link"><i class="fad fa-bars"></i> A Propos</a>
-                <a href="#bungalow" class="m-link"><i class="fas fa-house-flood"></i>Nos Produits</a>
-                <a href="#tarif" class="m-link"><i class="fas fa-id-card"></i>Nos Tarifs</a>
-                <a href="#contact" class="m-link"><i class="fas fa-id-card"></i> Contact</a>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
             </div>
-        </nav>
-    </header>
-    <div class="acceuil" id="acceuil">
-        <img src="background.jpg" alt="background" width="2070">
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
     </div>
-    <div class="activités" id="activité">
-        <h2 class="activités_title"><p class="w3-tangerine">A propos</p></h2>
-        
-    </div>
-
-    <div class="bungalows" id="bungalow">
-        <h2 class="bungalow_title"><p class="w3-tangerine">Nos produits</p></h2>
-        <div class="bungalow_items">
-            <img src="bun1.jpg" alt="bun" width="500" height="500">
-            <img src="bun2.jpg" alt="bun" width="800" height="500">
-            <img src="bun3.jpg" alt="bun" width="500" height="500">
-            <img src="bun4.jpg" alt="bun" width="800" height="500">
-            <img src="bun5.jpg" alt="bun" width="500" height="500">
-            <img src="bun6.jpg" alt="bun" width="500" height="500">
-        </div>
-        
-    </div>
-    <div class="tarif" id="tarif">
-        <h2 class="tarif_title">
-            <p class="w3-tangerine">Nos Tarifs</p>
-        </h2>
-        <table id="customers">
-            <tr>
-                <th>Poids</th>
-                <th>Prix</th>
-
-            </tr>
-            <tr>
-                <td>5 tiges</td>
-                <td>10 £</td>
-
-            </tr>
-            <tr>
-                <td>250 g</td>
-                <td>100 £</td>
-
-            </tr>
-            <tr>
-                <td>1 kg</td>
-                <td>385 £</td>
-            </tr>
-
-        </table>    
+  </div>
+  
+<!-- End Page Content -->
+</div>
 
 
-    
-    </div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
 </body>
-
-<footer>
-    <div class="wrapper">
-        <div class="contact" id="contact">
-            <h2 class="contact_title"><p class="w3-tangerine">Contact</p></h2>
-        </div>
-
-    <div class="card">
-        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE6cU0Jeo1lWw/profile-displayphoto-shrink_800_800/0/1639047442888?e=1663804800&v=beta&t=TSFrELgF2j6rJAKQBFvD53sk1hs-0VYsXQ4VWE5kGXs" alt="Avatar" style="width:100%">
-        <div class="container">
-            <h4><b>Asgar ALY</b></h4>
-            <p><a href="https://api.whatsapp.com/send?phone=%2B33636165126&text&app_absent=0" target="_blank">Whatsapp</a><br><br><br></p>
-        </div>
-    </div>
-
-
-
-
-
-    </div>
-
-    <!-- Copyright -->
-    <div class="copyright" class="text-center p-3">
-        © 2020 Copyright:
-        <p>Tous droits réservés</p>
-    </div>
-    <!-- Copyright -->
-</footer>
-
 </html>
