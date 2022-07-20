@@ -2,10 +2,139 @@
 <html>
 <head>
 <title>Vanille de Madagascar</title>
+  <style>
+    @import compass
+
+html
+	height: 100%
+	+background(#F2E1AC)
+	position: relative
+
+#logo
+	position: absolute
+	top: 50%
+	margin-top: -100px
+	left: 50%
+	margin-left: -150px
+	+inline-block
+	width: 300px	
+	height: 200px
+
+	.c1, .c2
+		position: absolute
+		top: 0
+		height: 200px
+		width: 200px
+		+border-radius(100px)
+		content: ''
+
+	.c1
+		left: 0
+		+background(rgba(#63A69F, 0.5))
+
+	.c2
+		right: 0
+		+background(rgba(#F2594B, 0.5))
+
+	.d, .h, .h:before, .h:after
+		position: absolute
+		top: 50%
+		z-index: 1
+		+background(rgba(#fff, 0.75))
+
+
+	.d
+		left: 50%
+		margin-left: -110px
+		margin-top: -60px
+		height: 120px
+		width: 100px
+		+border-radius(20px 60px 60px 20px)
+
+	.h
+		right: 50%
+		margin-right: -110px
+		margin-top: -15px
+		height: 30px
+		width: 100px
+		+border-radius(20px)
+
+		&:before, &:after
+			margin-top: -60px
+			width: 30px
+			height: 120px
+			+border-radius(20px)
+			content: ''
+
+		&:before
+			left: 0
+
+		&:after
+			right: 0
+
+
+
+@keyframes left-circle
+	0%
+		+opacity(0)
+		left: 100%
+	
+	100%
+		+opacity(1)
+		left: 0
+
+@keyframes right-circle
+	0%
+		+opacity(0)
+		right: 100%
+	
+	100%
+		+opacity(1)
+		right: 0
+
+@keyframes letters
+	0%
+		+opacity(0)
+
+	50%
+		+opacity(0)
+
+	100%
+		+opacity(1)
+
+
+#logo
+	.c1, .c2
+		animation-duration: 2s
+		animation-timing-function: ease
+
+	.c1
+		animation-name: left-circle
+
+	.c2
+		animation-name: right-circle
+
+	.d, .h
+		animation-name: letters
+		animation-duration: 2s
+		animation-timing-function: ease
+
+
+		
+	
+
+		
+  </style>  
 </head>
 <body>
-<h1>Oumé Salma</h1>
-  <a href="https://api.whatsapp.com/send?phone=%2B33636165126&text&app_absent=0" target="_blank">Link Text Here</a>
+  #logo
+	.c1
+	.c2
+	.d
+	.h
+  
+<h1>Contact</h1>
+  <a href="https://api.whatsapp.com/send?phone=%2B33636165126&text&app_absent=0" target="_blank">Me contacter pour plus d'info</a>
   
 </body>
 </html>
