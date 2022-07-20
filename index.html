@@ -1,140 +1,109 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Vanille de Madagascar</title>
-  <style>
-    @import compass
+    <meta charset="utf-8">
+    <title>Vanille de Madagascar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
 
-html
-	height: 100%
-	+background(#F2E1AC)
-	position: relative
-
-#logo
-	position: absolute
-	top: 50%
-	margin-top: -100px
-	left: 50%
-	margin-left: -150px
-	+inline-block
-	width: 300px	
-	height: 200px
-
-	.c1, .c2
-		position: absolute
-		top: 0
-		height: 200px
-		width: 200px
-		+border-radius(100px)
-		content: ''
-
-	.c1
-		left: 0
-		+background(rgba(#63A69F, 0.5))
-
-	.c2
-		right: 0
-		+background(rgba(#F2594B, 0.5))
-
-	.d, .h, .h:before, .h:after
-		position: absolute
-		top: 50%
-		z-index: 1
-		+background(rgba(#fff, 0.75))
-
-
-	.d
-		left: 50%
-		margin-left: -110px
-		margin-top: -60px
-		height: 120px
-		width: 100px
-		+border-radius(20px 60px 60px 20px)
-
-	.h
-		right: 50%
-		margin-right: -110px
-		margin-top: -15px
-		height: 30px
-		width: 100px
-		+border-radius(20px)
-
-		&:before, &:after
-			margin-top: -60px
-			width: 30px
-			height: 120px
-			+border-radius(20px)
-			content: ''
-
-		&:before
-			left: 0
-
-		&:after
-			right: 0
-
-
-
-@keyframes left-circle
-	0%
-		+opacity(0)
-		left: 100%
-	
-	100%
-		+opacity(1)
-		left: 0
-
-@keyframes right-circle
-	0%
-		+opacity(0)
-		right: 100%
-	
-	100%
-		+opacity(1)
-		right: 0
-
-@keyframes letters
-	0%
-		+opacity(0)
-
-	50%
-		+opacity(0)
-
-	100%
-		+opacity(1)
-
-
-#logo
-	.c1, .c2
-		animation-duration: 2s
-		animation-timing-function: ease
-
-	.c1
-		animation-name: left-circle
-
-	.c2
-		animation-name: right-circle
-
-	.d, .h
-		animation-name: letters
-		animation-duration: 2s
-		animation-timing-function: ease
-
-
-		
-	
-
-		
-  </style>  
 </head>
+
 <body>
-  #logo
-	.c1
-	.c2
-	.d
-	.h
-  
-<h1>Contact</h1>
-  <a href="https://api.whatsapp.com/send?phone=%2B33636165126&text&app_absent=0" target="_blank">Me contacter pour plus d'info</a>
-  
+    <header role="header">
+        <nav class="menu" role="navigation">
+            <div class="m-left">
+                <img src="Images/logo.png" alt="logo" height="105" width="95">
+            </div>
+            <div class="m-right">
+                <a href="#acceui" class="m-link"><i class="fas fa-home"></i> Acceuil</a>
+                <a href="#activité" class="m-link"><i class="fad fa-bars"></i> A Propos</a>
+                <a href="#bungalow" class="m-link"><i class="fas fa-house-flood"></i>Nos Produits</a>
+                <a href="#tarif" class="m-link"><i class="fas fa-id-card"></i>Nos Tarifs</a>
+                <a href="#contact" class="m-link"><i class="fas fa-id-card"></i> Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="acceuil" id="acceuil">
+        <img src="Images/background.jpg" alt="background" width="2070">
+    </div>
+    <div class="activités" id="activité">
+        <h2 class="activités_title"><p class="w3-tangerine">A propos</p></h2>
+        
+    </div>
+
+    <div class="bungalows" id="bungalow">
+        <h2 class="bungalow_title"><p class="w3-tangerine">Nos produits</p></h2>
+        <div class="bungalow_items">
+            <img src="Images/bun1.jpg" alt="bun" width="500" height="500">
+            <img src="Images/bun2.jpg" alt="bun" width="800" height="500">
+            <img src="Images/bun3.jpg" alt="bun" width="500" height="500">
+            <img src="Images/bun4.jpg" alt="bun" width="800" height="500">
+            <img src="Images/bun5.jpg" alt="bun" width="500" height="500">
+            <img src="Images/bun6.jpg" alt="bun" width="500" height="500">
+        </div>
+        
+    </div>
+    <div class="tarif" id="tarif">
+        <h2 class="tarif_title">
+            <p class="w3-tangerine">Nos Tarifs</p>
+        </h2>
+        <table id="customers">
+            <tr>
+                <th>Poids</th>
+                <th>Prix</th>
+
+            </tr>
+            <tr>
+                <td>5 tiges</td>
+                <td>10 £</td>
+
+            </tr>
+            <tr>
+                <td>250 g</td>
+                <td>100 £</td>
+
+            </tr>
+            <tr>
+                <td>1 kg</td>
+                <td>385 £</td>
+            </tr>
+
+        </table>    
+
+
+    
+    </div>
 </body>
+
+<footer>
+    <div class="wrapper">
+        <div class="contact" id="contact">
+            <h2 class="contact_title"><p class="w3-tangerine">Contact</p></h2>
+        </div>
+
+    <div class="card">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQE6cU0Jeo1lWw/profile-displayphoto-shrink_800_800/0/1639047442888?e=1663804800&v=beta&t=TSFrELgF2j6rJAKQBFvD53sk1hs-0VYsXQ4VWE5kGXs" alt="Avatar" style="width:100%">
+        <div class="container">
+            <h4><b>Asgar ALY</b></h4>
+            <p><a href="https://api.whatsapp.com/send?phone=%2B33636165126&text&app_absent=0" target="_blank">Whatsapp</a><br><br><br></p>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="copyright" class="text-center p-3">
+        © 2020 Copyright:
+        <p>Tous droits réservés</p>
+    </div>
+    <!-- Copyright -->
+</footer>
+
 </html>
